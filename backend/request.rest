@@ -1,0 +1,27 @@
+GET http://localhost:3001/resep
+
+###
+GET http://localhost:3001/resep/1
+
+###
+POST http://localhost:3001/resep
+Content-Type: application/json
+
+{
+    "nama_makanan": "Nasi Goreng",
+    "bahan": "Beras, telur, daging sapi",
+    "step_by_step": "Pertama, masak beras. Kedua, masak telur. Ket"
+}
+
+###
+PATCH http://localhost:3001/resep/1
+Content-Type: application/json
+
+{
+    "nama_makanan": "Mie Goreng",
+    "bahan": "Mie, telur, daging sapi",
+    "step_by_step": "Pertama, masak beras. Kedua, masak telur. Ket"
+}
+
+###
+DELETE http://localhost:3001/resep/2

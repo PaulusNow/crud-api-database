@@ -1,15 +1,8 @@
-const db = require('mysql')
-const conn = db.createPool({
+import { Sequelize } from "sequelize";
+
+const db = new Sequelize('resep_makanan', 'root', '', {
     host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'resep_makanan',
-    timezone: '+07:00'
+    dialect: 'mysql'
 })
 
-conn.getConnection(err => {
-    if (err) throw err
-    console.log("Berhasil Terhubung ke Database")
-})
-
-module.exports = conn
+export default db;
