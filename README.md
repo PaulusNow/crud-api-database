@@ -35,9 +35,9 @@ Proyek ini adalah aplikasi berbasis React yang memungkinkan pengguna untuk melih
    npm install
    ```
 3. **Jalankan Aplikasi**:
-  ```bash
-  npm start
-  ```
+   ```bash
+   npm start
+   ```
 4. **Jalankan Server Backend**: Pastikan server backend berjalan di http://localhost:3001 untuk mengambil dan memanipulasi data resep.
 
 ---
